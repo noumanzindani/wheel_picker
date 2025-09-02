@@ -1,6 +1,6 @@
 name: scroll_wheel_selector
 description: A customizable scroll wheel picker with selection lines and haptic feedback. 
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/noumanzindani/wheel_picker
 repository: https://github.com/noumanzindani/wheel_picker
 issue_tracker: https://github.com/noumanzindani/wheel_picker/issues
