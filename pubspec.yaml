@@ -1,0 +1,22 @@
+name: scroll_wheel_selector
+description: A customizable scroll wheel picker with selection lines and haptic feedback. 
+version: 0.0.1
+homepage: https://github.com/noumanzindani/wheel_picker
+repository: https://github.com/noumanzindani/wheel_picker
+issue_tracker: https://github.com/noumanzindani/wheel_picker/issues
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  # No assets/fonts needed since this is a reusable widget
