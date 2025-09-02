@@ -1,18 +1,20 @@
-library;
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class WheelPicker extends StatefulWidget {
+  // Required parameters
   final List<int> values;
   final int initialValue;
+  // selectedColor, unselectedColor, lineColor
   final Color selectedColor;
   final Color unselectedColor;
   final Color lineColor;
+  //height, width, itemExtent
   final double height;
   final double width;
   final double itemExtent;
   final ValueChanged<int>? onSelected;
+  // Optional text styles
   final TextStyle? selectedTextStyle;
   final TextStyle? unselectedTextStyle;
 
@@ -92,17 +94,17 @@ class _WheelPickerState extends State<WheelPicker> {
                   '$value',
                   style: isSelected
                       ? (widget.selectedTextStyle ??
-                            TextStyle(
-                              fontSize: 55,
-                              color: widget.selectedColor,
-                              fontWeight: FontWeight.bold,
-                            ))
+                          TextStyle(
+                            fontSize: 55,
+                            color: widget.selectedColor,
+                            fontWeight: FontWeight.bold,
+                          ))
                       : (widget.unselectedTextStyle ??
-                            TextStyle(
-                              fontSize: 55,
-                              color: widget.unselectedColor,
-                              fontWeight: FontWeight.normal,
-                            )),
+                          TextStyle(
+                            fontSize: 55,
+                            color: widget.unselectedColor,
+                            fontWeight: FontWeight.normal,
+                          )),
                 ),
               );
             }).toList(),
