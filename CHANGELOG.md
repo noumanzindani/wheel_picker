@@ -1,9 +1,11 @@
+## 0.0.3
+- Added complete dartdoc documentation for public API.
+- Improved example with inline documentation.
+- Enhanced code readability and maintainability.
+
 ## 0.0.2
-- Improved documentation coverage (added DartDoc comments).
-- Added example app usage.
-- Cleaned up `.gitignore` and `.pubignore`.
-- Fixed validation warnings.
+- Added partial documentation.
+- Initial example app created.
 
 ## 0.0.1
-- Initial release of `scroll_wheel_selector`.
-- Added basic scroll wheel selector widget.
+- Initial release with basic `WheelPicker` functionality.

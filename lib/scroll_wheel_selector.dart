@@ -1,23 +1,59 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+/// A customizable scroll wheel picker widget.
+///
+/// The [WheelPicker] displays a scrollable list of values in a wheel-like
+/// UI, allowing users to select one item at a time.
+///
+/// Example:
+/// ```dart
+/// WheelPicker(
+///   values: List.generate(50, (i) => i),
+///   initialValue: 10,
+///   lineColor: Colors.blue,
+///   selectedColor: Colors.white,
+///   unselectedColor: Colors.grey,
+///   onSelected: (value) {
+///     print("Selected value: $value");
+///   },
+/// )
+/// ```
 class WheelPicker extends StatefulWidget {
-  // Required parameters
+  /// List of integer values to be displayed in the picker.
   final List<int> values;
+
+  /// The value that should be initially selected.
   final int initialValue;
-  // selectedColor, unselectedColor, lineColor
+
+  /// Color for the currently selected value text.
   final Color selectedColor;
+
+  /// Color for the unselected values text.
   final Color unselectedColor;
+
+  /// Color of the horizontal selection indicator lines.
   final Color lineColor;
-  //height, width, itemExtent
+
+  /// Height of the picker widget.
   final double height;
+
+  /// Width of the picker widget.
   final double width;
+
+  /// The vertical space each item occupies in the wheel.
   final double itemExtent;
+
+  /// Callback triggered when a value is selected.
   final ValueChanged<int>? onSelected;
-  // Optional text styles
+
+  /// Custom text style for the selected value (optional).
   final TextStyle? selectedTextStyle;
+
+  /// Custom text style for unselected values (optional).
   final TextStyle? unselectedTextStyle;
 
+  /// Creates a new [WheelPicker].
   const WheelPicker({
     super.key,
     required this.values,
@@ -37,10 +73,14 @@ class WheelPicker extends StatefulWidget {
   State<WheelPicker> createState() => _WheelPickerState();
 }
 
+/// State class for [WheelPicker].
+///
+/// Handles scrolling, selection updates, and rendering of the picker.
 class _WheelPickerState extends State<WheelPicker> {
   late FixedExtentScrollController _controller;
   late int selectedValue;
 
+  /// Initializes the scroll controller and sets the initial selected value.
   @override
   void initState() {
     super.initState();
@@ -50,6 +90,7 @@ class _WheelPickerState extends State<WheelPicker> {
     );
   }
 
+  /// Builds the wheel picker UI with selection lines and scrollable values.
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -114,6 +155,7 @@ class _WheelPickerState extends State<WheelPicker> {
     );
   }
 
+  /// Disposes the scroll controller to free resources.
   @override
   void dispose() {
     _controller.dispose();
