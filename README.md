@@ -15,7 +15,7 @@ Ideal for number pickers, age selectors, height selectors, or any scenario where
 
 ## 📸 Preview
 
-![Wheel Picker Demo](screenshots/scroll_wheel_selector.jpeg)
+![Wheel Picker Demo](https://raw.githubusercontent.com/noumanzindani/wheel_picker/main/screenshots/scroll_wheel_selector.jpeg)
 
 ---
 
@@ -25,7 +25,7 @@ Add to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  scroll_wheel_selector: ^0.0.1
+  scroll_wheel_selector: ^0.0.4
 
 ## 🚀 Installation
 
