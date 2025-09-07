@@ -19,4 +19,5 @@ dev_dependencies:
   flutter_lints: ^5.0.0
 
 flutter:
-  # No assets/fonts needed since this is a reusable widget
+  assets:
+    - screenshots/

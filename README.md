@@ -13,6 +13,10 @@ Ideal for number pickers, age selectors, height selectors, or any scenario where
 - 🔄 Supports any list of integer values
 - 🔧 Reusable as a widget in any Flutter app
 
+## 📸 Preview
+
+![Wheel Picker Demo](screenshots/scroll_wheel_selector.jpeg)
+
 ---
 
 ## 🚀 Installation
